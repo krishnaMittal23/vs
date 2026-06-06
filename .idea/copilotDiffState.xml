@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/Movie (snapshot).java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/Movie (snapshot).java" />
+              <option name="originalContent" value="package com.vs.contentservice.model;&#10;&#10;import jakarta.persistence.*;import lombok.AllArgsConstructor;import lombok.Data;import lombok.NoArgsConstructor;&#10;import java.time.LocalDateTime;&#10;&#10;@Entity&#10;@Table(name=&quot;movies&quot;)&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Movie {&#10;&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.UUID)&#10;    private String id;&#10;&#10;    private String title;&#10;&#10;    private String description;&#10;&#10;    private Genre genre;&#10;&#10;    private String director;&#10;    private String cast;&#10;    private int releaseYear;&#10;&#10;    private double rating;&#10;    private String thumbnailUrl;&#10;    private int durationMinutes;&#10;&#10;    // s3 key&#10;    private String videoKey;&#10;&#10;    // HLS master playlist URL&#10;    private String hlsUrl;&#10;&#10;    private VideoStatus videoStatus;&#10;&#10;    private LocalDateTime createdAt;&#10;    private LocalDateTime updatedAt;&#10;&#10;}&#10;" />
+              <option name="updatedContent" value="package com.vs.contentservice.model;&#10;&#10;import jakarta.persistence.*;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;import java.time.LocalDateTime;&#10;&#10;@Entity&#10;@Table(name=&quot;movies&quot;)&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Movie {&#10;&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.UUID)&#10;    private String id;&#10;&#10;    private String title;&#10;&#10;    private String description;&#10;&#10;    private Genre genre;&#10;&#10;    private String director;&#10;    private String cast;&#10;    private int releaseYear;&#10;&#10;    private double rating;&#10;    private String thumbnailUrl;&#10;    private int durationMinutes;&#10;&#10;    // s3 key&#10;    private String videoKey;&#10;&#10;    // HLS master playlist URL&#10;    private String hlsUrl;&#10;&#10;    private VideoStatus videoStatus;&#10;&#10;    private LocalDateTime createdAt;&#10;    private LocalDateTime updatedAt;&#10;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
